@@ -8,7 +8,7 @@ public class Challenge
     {
         var test = "Those who dare to fail miserably can achieve greatly.";
         var test2 = "Love is a serious mental disease.";
-        var test3 = "I want to visit Rio this year.";
+        var test3 = "If you want to live a happy life, tie it to a goal, not to people.";
 
         var rs = RemoveLastVowel(test);
         var rs2 = RemoveLastVowel(test2);
@@ -42,9 +42,6 @@ public class Challenge
             {
                 return word.Remove(i, 1);
             }
-
-            if (char.IsLetter(word[i]))
-                break;
         }
 
         return word;
